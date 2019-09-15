@@ -33,12 +33,6 @@ body {
 	padding: 1rem auto;
 }
 
-.cont_head{
-	/*padding: 1rem auto;*/
-	/*margin-top: 1rem;*/
-
-}
-
 .cont_title{
 	text-align: center;
 	/*max-width: 95vw;*/
@@ -175,11 +169,14 @@ body {
 
 .new-search{
 	margin-top: 0.5rem;
-	background: var(--light);
-
 }
+.nav_icon {
+background: var(--light);
+padding: 0.5rem;
+}
+
 .nav_search{
-	width: 400px;
+	width: 93%;
 	height: 2rem;
 }
 
@@ -343,7 +340,7 @@ body {
 	
 }
 
-@media screen and (min-width: 768px){
+@media screen and (max-width: 1000px){
 	.sub_banner-container{
 	flex: 0 0 calc(25% - 1rem);
 	display: flex;
@@ -352,6 +349,31 @@ body {
 	border: 1px solid var(--light);
 	box-shadow: 0 0 15px var(--grey);
 	padding: 0.5rem 0.5rem;
+	}
+	.banner_left{
+		max-width: 100%;
+		padding: 9rem 1rem;
+		margin-left: 1rem;
+		margin-top: 2rem;
+		margin-right: 1rem;
+		margin-bottom: 2rem;
+		background: #f1f1f1;
+	}
+	.banner_right{
+		align-self: center;
+		margin-top: 2rem;
+	}
+	.nav_container{
+		align-items: center; 
+		padding: 9rem 2rem;
+		max-width: 50vw;
+	}
+	.postfooter_container{
+		max-width: 70vw;
+		background: var(--light);
+		padding: 1rem 1rem;
+		margin-bottom: 4rem;
+	}
 }
 
 .sub_banner-title-note{
@@ -386,7 +408,7 @@ body {
 	
 }
 .postfooter_container{
-	max-width: 30%;
+	max-width: 50%;
 	background: var(--light);
 	padding: 2rem 2rem;
 	margin-bottom: 4rem;
